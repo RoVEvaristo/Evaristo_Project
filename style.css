@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,6 @@ header {
 .logo {
     width: 80px;
     height: 80px;
-    
 }
 
 .site-title {
@@ -57,6 +55,7 @@ nav a:hover,
 nav a.active {
     color: #ff7043;
 }
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('IMAGES/slash_bg_blk_sm__77238.jpg');
     background-size: cover;
@@ -82,7 +81,6 @@ nav a.active {
 .hero-title .highlight {
     color: #ff5722;
 }
-
 
 .intro-section {
     background-color: #ff5722;
@@ -132,10 +130,10 @@ nav a.active {
     color: #ff5722;
 }
 
-
 .about-text-section {
     background-color: #ff5722;
     padding: 60px 100px;
+    color: white;
 }
 
 .about-text-content {
@@ -149,7 +147,6 @@ nav a.active {
     margin-bottom: 20px;
 }
 
-/* Shop Section */
 .shop-section {
     background-color: white;
     padding: 60px 100px;
@@ -210,7 +207,6 @@ nav a.active {
     color: #d32f2f;
     font-weight: bold;
 }
-
 
 .contact-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('IMAGES/cntct.jpg');
@@ -356,14 +352,44 @@ footer {
     font-size: 14px;
 }
 
-
-@media (max-width: 1200px) {
+/* Tablet Viewport (768px - 1024px) */
+@media (max-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/* Tablet Navigation - Horizontal with separators */
 @media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        padding: 20px 30px;
+        gap: 20px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+        padding: 15px 0;
+    }
+
+    nav a {
+        padding: 0 20px;
+        font-size: 16px;
+        border-right: 1px solid #444;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -371,20 +397,54 @@ footer {
     .contact-hero {
         flex-direction: column;
     }
-    
-    nav {
-        gap: 20px;
+
+    .hero,
+    .about-hero {
+        padding-left: 50px;
     }
-    
-    nav a {
-        font-size: 16px;
+
+    .intro-section,
+    .about-text-section,
+    .shop-section {
+        padding: 40px 50px;
     }
 }
 
+/* Mobile Viewport - Vertical stacked navigation */
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
         padding: 20px;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .site-title {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-right: none;
+        border-bottom: 1px solid #444;
+        font-size: 16px;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
     }
     
     .hero,
@@ -411,5 +471,10 @@ footer {
     
     .contact-hero {
         padding: 40px 30px;
+    }
+
+    .intro-content p,
+    .about-text-content p {
+        font-size: 16px;
     }
 }
