@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockwell Music - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="IMAGES/logo-icon-transparent.png" alt="Rockwell Music Logo" class="logo"></a>
+            <h1 class="site-title">Rockwell Music</h1>
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="contactus.html" class="active">CONTACT US</a>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <div class="contact-left">
+            <h2 class="contact-title">VISIT<br>OUR<br><span class="highlight">SHOP</span><br>NOW</h2>
+            
+            <div class="contact-info">
+                <h3>Visit our shop:</h3>
+                <p>Lakandula street, 5G<br>Building, Angeles City,<br>Pampanga</p>
+                
+                <img src="IMAGES/Map.PNG" alt="Location Map" class="map-image">
+                
+                <h3>Contact us:</h3>
+                <p>(+63) 960-567-9904</p>
+                
+                <h3>Email us:</h3>
+                <p>rockwellmusic@email.com</p>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="survey-form">
+                <div class="form-header">SURVEY FORM</div>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label>Have you visited us yet?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="visited" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="visited" value="no">
+                        <label for="no">No</label>
+                    </div>
+
+                    <label for="hear-about">Where did you hear about us?</label>
+                    <select id="hear-about" name="hear-about">
+                        <option value="">Please an option</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="friend">Friend/Family</option>
+                        <option value="online-search">Online Search</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label>What instruments do you prefer? (Check all that applies)</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="guitar" name="instruments" value="guitar">
+                        <label for="guitar">Guitar</label><br>
+                        <input type="checkbox" id="piano" name="instruments" value="piano">
+                        <label for="piano">Piano/ Keyboard</label><br>
+                        <input type="checkbox" id="bass" name="instruments" value="bass">
+                        <label for="bass">Bass Guitar</label><br>
+                        <input type="checkbox" id="drums" name="instruments" value="drums">
+                        <label for="drums">Drums</label><br>
+                        <input type="checkbox" id="other-inst" name="instruments" value="other">
+                        <label for="other-inst">Other/s</label>
+                        <input type="text" id="other-text" name="other-text" class="other-input">
+                    </div>
+
+                    <label>Do you recommend our products?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="rec-yes" name="recommend" value="yes">
+                        <label for="rec-yes">Yes</label>
+                        <input type="radio" id="rec-no" name="recommend" value="no">
+                        <label for="rec-no">No</label>
+                    </div>
+
+                    <label for="comments">Tell us about your experience, suggestions, and comments</label>
+                    <textarea id="comments" name="comments" rows="6"></textarea>
+
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <!-- Background image placeholder: guitar-player-hat-background.jpg -->
+    </section>
+
+    <footer>
+        <p>© Copyright 2025. Rockwell Music Corporation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
